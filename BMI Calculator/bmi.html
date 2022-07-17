@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta UTF-8">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+ <main id="bmi1">
+      <h1>BMI Calculator</h1><br>
+   <section id="container">
+       <br>
+      <div id="display-el">20.0</div><br>
+       <p id="condition-el">Normal Weight</p>      
+  </section>
+  <div id="calculate">
+      <br>
+      <label for="weight">Weight: </label>
+      <input type="range" min="20" max="200"
+      value="20" id="weight" oninput="calc()">
+      <p id="kilo">20Kg</p>
+      
+      
+      <br><br>
+      <label for="height">Height: </label>
+      <input type="range" min="100" max="250.0"
+      value="100" id="height" oninput="calc()">
+      <p id="centi">100cm</p>
+  </div>
+  <br>
+  <hr>
+  </main>
+  
+  <section id="bmi2">
+      <h1>BMI Calculator</h1><br>
+   <section id="container2">
+       <br>
+      <div id="display-el2">20.0</div><br>
+       <p id="condition-el2">Normal Weight</p>      
+  </section>
+  <div id="calculate2">
+      <br>
+      <label for="weight2">Weight: </label>
+      <input type="number" min="20" max="200"
+      value="20" id="weight2" oninput="calc2()">
+      <p id="kilo2">20Kg</p>
+      
+      
+      <br><br>
+      <label for="height2">Height: </label>
+      <input type="number" min="100" max="250"
+      value="100" id="height2" oninput="calc2()">
+      <p id="centi2">100cm</p>
+  </div>
+  <br>
+  <hr>  
+  </section>
+  <button id="move">Analog</button>
+  <button id="removeEl">Digital</button>
+ <script src="bmi.js"></script>
+</body>
+</html>
